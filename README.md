@@ -78,9 +78,10 @@ curl -X POST http://localhost:8000/posts/{post_id}/comments/ -H "Content-Type: a
 curl -X POST http://localhost:8000/posts/{post_id}/like-dislike/ -H "Content-Type: application/json" -d '{"liked": true, "user": "John Doe"}'
 ```
 
-## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-```
 
-You can copy this markdown content and replace placeholders like `your_username` with appropriate values. This consolidated README provides a comprehensive overview of your FastAPI application, including installation instructions, usage examples, and license information.
+## Run the following command
+uvicorn app:app --reload
+
+Then 
+http://127.0.0.1:8000/docs
